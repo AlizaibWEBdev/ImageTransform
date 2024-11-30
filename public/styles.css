@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+p{
+    line-height: 1.5rem;    
+}
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+
+    color: #000000;
+}
+
+header {
+    background: linear-gradient(to right, #0056b3, #ff416c);
+    color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #ffe259;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+#convert-form {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #272727;
+    margin: auto;
+
+}
+
+#convert-form .form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#convert-form .form-row label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 15px;
+    width: 40%;
+}
+
+#convert-form .form-row input,
+#convert-form .form-row select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 55%;
+}
+
+#convert-form .form-row input[type="file"] {
+    padding: 5px;
+}
+
+#convert-form button[type="submit"] {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #5C6BC0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#convert-form button[type="submit"]:hover {
+    background-color: #3f51b5;
+}
+
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loading {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: none;
+    font-size: 18px;
+    color: #ff9800;
+
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section {
+    padding:20px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #333;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #000000;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+
+section p {
+    margin-bottom: 18px;
+    color: #1f1f1f;
+}
+
+section ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+footer {
+    background-color: #20232a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    #convert-form .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #convert-form .form-row label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #convert-form .form-row input,
+    #convert-form .form-row select {
+        width: 100%;
+    }
+
+    #convert-form button[type="submit"] {
+        width: 100%;
+    }
+}

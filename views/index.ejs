@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+    content="Convert images to various formats like JPG, PNG, PDF, SVG, and more effortlessly. Free online image converter with advanced features like resizing, compressing, and editing.">
+    <meta name="keywords"
+    content="image converter, image convert, convert image to jpg, image converter free, convert image to png, convert image to pdf, image convert online, image resize, convert image to vector, convert image to webp, convert image to svg">
+    <meta name="author" content="ImageTransform">
+    
+    <meta name="google-site-verification" content="bTRlMgrBbckq_jgRj0Eiw0ds2p2lBt0zADKkc6Ydch0" />
+
+    <meta property="og:title" content="Free Online Image Converter | Convert WebP, PNG, JPG, and More">
+    <meta property="og:description"
+        content="Easily convert and transform images into different formats such as JPG, PNG, PDF, SVG, and more with ImageTransform. Enjoy features like resizing, compressing, and editing.">
+    <meta property="og:url" content="https://imagetransform.vercel.app/">
+    <meta property="og:image" content="images.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ImageTransform">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Online Image Converter | Convert WebP, PNG, JPG, and More">
+    <meta name="twitter:description"
+        content="Transform images with ImageTransform - the ultimate free online image converter. Convert to formats like JPG, PNG, PDF, SVG, and more.">
+    <meta name="twitter:image" content="images.png">
+    <meta name="twitter:url" content="https://imagetransform.vercel.app/">
+    <meta name="robots" content="index, follow">
+    <meta name="canonical" content="https://imagetransform.vercel.app/">
+    <link rel="icon" href="images.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Free Online Image Converter | Convert WebP, PNG, JPG, and More</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "ImageTransform",
+            "url": "https://imagetransform.vercel.app/",
+            "description": "Free online image converter and editor. Convert images to JPG, PNG, PDF, SVG, and more.",
+            "image": "images.png",
+            "publisher": {
+                "@type": "Organization",
+                "name": "ImageTransform",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "images.png"
+                }
+            }
+        }
+        </script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo" style="display: flex;align-items: center; justify-content: center; gap: 5px;">
+            ImageTransform
+            <img src="images.png" alt="" width="35px">
+
+        </div>
+        <nav class="nav">
+            <a href="#features">Features</a>
+            <a href="#how-to-use">How to Use</a>
+            <a href="#faq">FAQs</a>
+            <a href="#why-us">Why us</a>
+
+        </nav>
+    </header>
+    <br>
+    <br>
+    <section style="text-align: center;">
+        <h1 style="font-size: 3vmax;">Easily Convert WebP, PNG, JPG, GIF, and More for Free</h1>
+        <p>Transform your images effortlessly into any format you need — fast, free, and user-friendly with
+            ImageTransform.</p>
+    </section>
+    <br>
+    <form id="convert-form">
+        <div class="form-row">
+            <label for="image">Upload Image:</label>
+            <input type="file" id="image" name="image" accept="image/*" required>
+        </div>
+
+        <div class="form-row">
+            <label for="format">Convert To:</label>
+            <select id="format" name="format" required>
+                <option value="jpeg">JPEG</option>
+                <option value="png">PNG</option>
+                <option value="webp">WebP</option>
+                <option value="tiff">TIFF</option>
+                <option value="gif">GIF</option>
+                <option value="avif">AVIF</option>
+                <option value="heif">HEIF</option>
+            </select>
+        </div>
+
+        <div class="form-row">
+            <button type="submit"><i class="fa-solid fa-sync-alt"></i> Convert</button>
+        </div>
+    </form>
+
+    <div class="loading-container">
+        <div class="loading"></div>
+    </div>
+    <div class="image-container">
+        <a id="download-btn" class="download-btn" href="" download="" style="display: none;">
+            <i class="fa-solid fa-download"></i> Download Image
+        </a>
+        <br>
+        <img id="converted-image" src="" alt="" style="display: none;">
+
+    </div>
+
+
+
+    <section id="how-to-use">
+
+        <h3>How It Works</h3>
+
+        <h4>Step 1: Upload Your Image</h4>
+        <p>Start by uploading your image to the platform. We support multiple image formats such as
+            <strong>JPEG</strong>, <strong>PNG</strong>, <strong>GIF</strong>, <strong>TIFF</strong>, and
+            <strong>WebP</strong>. No need for any complicated software installation.
+        </p>
+
+        <h4>Step 2: Choose Your Desired Format</h4>
+        <p>Select from a wide range of formats for conversion, including <strong>WebP to PNG</strong>, <strong>JPEG to
+                WebP</strong>, <strong>TIFF to JPEG</strong>, and many others. Whether you need a <strong>transparent
+                PNG</strong>, or a <strong>WebP with a transparent background</strong>, we have you covered!</p>
+
+        <h4>Step 3: Convert & Download</h4>
+        <p>Once your image is uploaded and the format selected, the conversion process begins. During conversion, you’ll
+            see a loading animation to let you know everything is processing smoothly. Once the conversion is complete,
+            your image will be ready for download. Click the download button to save the image to your device in the
+            chosen format.</p>
+
+
+
+    </section>
+
+    <section id="features">
+        <h3>Why Choose ImageTransform?</h3>
+
+        <ul>
+            <li><strong>Support for Multiple Formats:</strong> Convert images between a variety of formats, including
+                <strong>JPEG</strong>, <strong>PNG</strong>, <strong>WebP</strong>, <strong>GIF</strong>,
+                <strong>TIFF</strong>, <strong>AVIF</strong>, and <strong>HEIF</strong>.
+            </li>
+            <li><strong>High-Quality Conversions:</strong> Our tool ensures high-quality image conversions without
+                losing detail or transparency. Whether you’re converting <strong>WebP to PNG without losing
+                    quality</strong> or <strong>JPEG to WebP with transparency</strong>, expect accurate results.</li>
+            <li><strong>Fast & Reliable:</strong> Experience quick conversions with a user-friendly interface and
+                minimal waiting time.</li>
+            <li><strong>Free & Easy to Use:</strong> Convert images without downloading any software. Just upload,
+                convert, and download for free.</li>
+            <li><strong>Compatible with All Devices:</strong> Use it on your computer, phone, or tablet. Convert images
+                directly on <strong>Windows 10</strong>, <strong>Windows 11</strong>, or any device.</li>
+        </ul>
+
+    </section>
+
+
+    <section id="why-us">
+        <h3>About Us</h3>
+
+        <h4>Transform Your Images with Ease</h4>
+        <p>At <strong>ImageTransform</strong>, we understand that working with different image formats can be
+            time-consuming. That’s why we’ve created a fast, easy, and free online image conversion tool. Whether you
+            need to convert <strong>WebP to JPG</strong>, <strong>JPEG to PNG with transparent background</strong>, or
+            <strong>PNG to WebP for faster web performance</strong>, our goal is to simplify the process for you.
+        </p>
+
+        <p>Our tool ensures the highest quality output, preserving image integrity throughout the conversion process.
+            From <strong>batch conversion</strong> to <strong>individual image transformations</strong>, we support all
+            your image conversion needs. Plus, you don’t need any prior knowledge or experience with image editing—just
+            upload your image and let us handle the rest.</p>
+
+    </section>
+
+    <section id="faq">
+
+        <h3>Frequently Asked Questions (FAQ)</h3>
+
+        <h4>1. How do I convert WebP to JPG?</h4>
+        <p>To convert <strong>WebP to JPG</strong>, simply upload your WebP image to our tool, select
+            <strong>JPG</strong> as the output format, and click <strong>Convert</strong>. Your image will be ready to
+            download in just a few seconds.
+        </p>
+
+        <h4>2. How to convert WebP to PNG with transparency?</h4>
+        <p>Converting <strong>WebP to PNG with transparency</strong> is simple! Just upload your WebP file and select
+            <strong>PNG</strong> as the format. Our tool will maintain any transparency from your original image.
+        </p>
+
+        <h4>3. Can I convert a batch of images from PNG to WebP at once?</h4>
+        <p>Yes, our platform supports <strong>bulk image conversion</strong>! You can easily convert multiple
+            <strong>PNG to WebP</strong> or <strong>JPEG to PNG</strong> images in one go. Upload all the images, select
+            your desired output format, and click <strong>Convert</strong>.
+        </p>
+
+        <h4>4. How do I convert JPEG to PNG on Windows 10?</h4>
+        <p>If you need to convert <strong>JPEG to PNG on Windows 10</strong>, simply upload your <strong>JPEG
+                image</strong>, choose <strong>PNG</strong> as the format, and hit <strong>Convert</strong>. The
+            converted image will be ready to download almost instantly.</p>
+
+        <h4>5. What is the difference between WebP and JPG?</h4>
+        <p>WebP is a modern image format developed by Google, offering smaller file sizes while maintaining high image
+            quality. JPG, on the other hand, is an older format that may not provide the same level of compression
+            efficiency as WebP. Use <strong>WebP</strong> for web usage when you want faster load times, but for general
+            use and compatibility, <strong>JPG</strong> is still widely used.</p>
+
+        <h4>6. Can I convert an image with a transparent background?</h4>
+        <p>Yes! We support <strong>converting WebP to PNG with transparent background</strong> and other similar
+            formats. Our tool ensures your images retain their transparency during the conversion process.</p>
+
+        <h4>7. How to convert PNG to JPG with a white background?</h4>
+        <p>To convert <strong>PNG to JPG with a white background</strong>, simply upload your <strong>PNG image</strong>
+            and select <strong>JPG</strong> as your desired format. If your PNG has a transparent background, we will
+            fill it with white automatically.</p>
+
+        <h4>8. Is this tool free to use?</h4>
+        <p>Yes, <strong>ImageTransform</strong> is completely free. There are no hidden charges. Convert as many images
+            as you need, anytime, without paying a dime.</p>
+
+
+    </section>
+    <section>
+
+        <h3>Use Cases</h3>
+
+        <ul>
+            <li><strong>For Web Designers:</strong> Quickly convert <strong>PNG to WebP</strong> for better website
+                performance.</li>
+            <li><strong>For Developers:</strong> Convert <strong>WebP to JPG</strong> for better browser compatibility.
+            </li>
+            <li><strong>For Photographers:</strong> Convert <strong>TIFF to JPEG</strong> for smaller file sizes while
+                maintaining image quality.</li>
+            <li><strong>For Content Creators:</strong> Convert <strong>GIF to WebP</strong> for faster loading times on
+                social media and blogs.</li>
+        </ul>
+
+
+    </section>
+    <section>
+        <h3>Did You Know?</h3>
+        <ol>
+            <li><strong>How to Convert WebP to JPG or PNG for Free</strong>
+                <p>Wondering how to convert <strong>WebP to JPG</strong>, <strong>PNG</strong>, or other formats? It’s
+                    easier than you think! You can quickly convert <strong>WebP to JPG</strong> or <strong>PNG</strong>
+                    online, without losing image quality. This can be helpful for users who need more compatible file
+                    formats like JPG or PNG for their website or app.</p>
+            </li>
+            <li><strong>Can You Convert WebP to JPG or PNG on Windows?</strong>
+                <p>Yes! Whether you’re using <strong>Windows 10</strong>, <strong>Windows 11</strong>, or even
+                    <strong>Windows 7</strong>, you can convert <strong>WebP to JPG</strong> or <strong>WebP to
+                        PNG</strong> with ease. Use our free online image converter tool, and you can also choose to
+                    <strong>convert WebP to PNG with transparency</strong> if needed.</p>
+            </li>
+            <li><strong>Convert WebP to PNG with Transparency</strong>
+                <p>Looking to preserve the transparency when converting <strong>WebP to PNG</strong>? Our converter
+                    ensures your transparent backgrounds stay intact, so you don’t have to worry about losing important
+                    details from your image.</p>
+            </li>
+            <li><strong>How Do You Convert WebP to JPG?</strong>
+                <p>If you're unsure of how to convert <strong>WebP to JPG</strong>, you can do it in just a few clicks.
+                    This is particularly useful for people who want to convert <strong>WebP to JPG</strong> for better
+                    compatibility with social media or web pages. You can also convert <strong>WebP to JPG on Windows
+                        10</strong> easily using our free tool.</p>
+            </li>
+            <li><strong>Convert WebP to JPG on Chrome or Chromebook</strong>
+                <p>Using a Chromebook? You can also easily convert <strong>WebP to JPG on Chromebook</strong> using our
+                    online tool, which works on any platform, from <strong>Linux</strong> to <strong>Mac</strong>. No
+                    need to install any software!</p>
+            </li>
+            <li><strong>How to Convert JPG to WebP</strong>
+                <p>Want to convert <strong>JPG to WebP</strong> for faster loading times and better image compression?
+                    Our free online converter can help you transform <strong>JPG to WebP</strong> without hassle.</p>
+            </li>
+            <li><strong>Convert WebP to PNG Without Losing Quality</strong>
+                <p>With our converter, you can <strong>convert WebP to PNG without losing quality</strong>—perfect for
+                    images that need to maintain sharpness and detail, such as product photos or art.</p>
+            </li>
+            <li><strong>Convert Multiple WebP Images to PNG or JPG</strong>
+                <p>Need to <strong>convert WebP to PNG in bulk</strong>? You can easily convert <strong>multiple WebP
+                        files to JPG</strong> or <strong>PNG</strong> with our batch conversion feature, saving you time
+                    and effort.</p>
+            </li>
+            <li><strong>Free JPG to PNG Converter</strong>
+                <p>Do you need to convert <strong>JPG to PNG with transparent background</strong> for a website? Our
+                    tool allows you to easily <strong>convert JPG to PNG transparent background free</strong>—a
+                    must-have for web design.</p>
+            </li>
+            <li><strong>What is the Difference Between JPG and PNG?</strong>
+                <p>Wondering whether to use <strong>JPG</strong> or <strong>PNG</strong>? <strong>JPG</strong> is best
+                    for photographs with complex colors, while <strong>PNG</strong> supports transparency and is better
+                    for images like logos. Choose the format that suits your needs, and easily <strong>convert JPG to
+                        PNG with a transparent background</strong> if needed.</p>
+            </li>
+            <li><strong>Convert WebP to PNG with a Transparent Background</strong>
+                <p>If you're trying to convert <strong>WebP to PNG with transparency</strong> preserved, you can rely on
+                    our tool to do so without a hitch. It’s perfect for images that need to maintain their
+                    <strong>transparent background</strong>.</p>
+            </li>
+            <li><strong>JPG to PNG Converter Tools like EZGIF</strong>
+                <p>For a quick conversion, tools like <strong>JPG to PNG converter EZGIF</strong> make the process fast
+                    and easy. This tool is especially useful for those looking to convert <strong>JPG to PNG transparent
+                        background</strong> in just a few clicks.</p>
+            </li>
+            <li><strong>Convert WebP to JPG Windows 7, 10, or 11</strong>
+                <p>Whether you’re on <strong>Windows 7, 10, or 11</strong>, converting <strong>WebP to JPG</strong> or
+                    <strong>WebP to PNG</strong> is easy with our free tool. Simply upload your image and choose your
+                    desired output format.</p>
+            </li>
+            <li><strong>How to Convert WebP to JPG Linux</strong>
+                <p>On Linux? You can still <strong>convert WebP to JPG</strong> or <strong>convert WebP to PNG</strong>
+                    using our simple online converter, making it a great tool for users across all platforms.</p>
+            </li>
+            <li><strong>Easily Convert JPG to WebP in Photoshop</strong>
+                <p>If you use Photoshop, you can <strong>convert JPG to WebP</strong> directly within the app. But if
+                    you're looking for a quicker solution, our online converter can handle it in just a few seconds!</p>
+            </li>
+            <li><strong>WebP to PNG Conversion Without Losing Transparency</strong>
+                <p>Want to preserve transparency? Learn how to <strong>convert WebP to PNG without losing
+                        transparency</strong> using our free image converter, which ensures your images remain
+                    high-quality and transparent.</p>
+            </li>
+            <li><strong>Convert WebP to JPG Online for Fast Results</strong>
+                <p>With just a few clicks, you can <strong>convert WebP to JPG online</strong>—whether you need to
+                    <strong>convert WebP to JPG Windows 10</strong>, <strong>convert WebP to JPG Windows 11</strong>, or
+                    other operating systems. It’s quick, easy, and free!</p>
+            </li>
+            <li><strong>Convert WebP to PNG with Transparent Background Free</strong>
+                <p>Need a <strong>WebP to PNG transparent background free</strong> tool? Our online converter ensures
+                    that you can convert WebP to PNG with transparent backgrounds without losing any data or quality.
+                </p>
+            </li>
+            <li><strong>Bulk Conversion: WebP to PNG Multiple Files</strong>
+                <p>If you need to <strong>convert multiple WebP files to PNG</strong> at once, our tool allows you to
+                    easily <strong>convert WebP to PNG bulk</strong>, saving you time and effort with batch conversion.
+                </p>
+            </li>
+            <li><strong>How to Convert WebP to PNG in Bulk Without Losing Quality</strong>
+                <p>If you're dealing with a large collection of images, our tool can help you <strong>convert WebP to
+                        PNG in bulk without losing quality</strong>, making it perfect for anyone working with multiple
+                    images at once, like web developers or designers.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h3>Start Converting Your Images Today!</h3>
+        <p>Whether you're looking to convert <strong>WebP to JPG</strong>, <strong>JPEG to PNG</strong>, or any other
+            format, <strong>ImageTransform</strong> makes image conversion simple and free. Try it out today and
+            experience seamless image transformations with no sign-up required.</p>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Alizaib. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
