@@ -25,6 +25,11 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
+app.get("/blog",(req,res)=>{
+  res.render('blog');
+  
+})
+
 // POST route for image conversion (handles file upload)
 app.post('/convert', upload.single('image'), async (req, res) => {
   const { format } = req.body;
